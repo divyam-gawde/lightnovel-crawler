@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  lncrawl:
+    build: .
+    container_name: lncrawl
+    restart: always
+    volumes:
+      - ./data:/data
+    ports:
+      - "8000:8000"
