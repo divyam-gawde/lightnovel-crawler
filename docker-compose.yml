@@ -1,12 +1,10 @@
-version: "3.9"
-
 services:
   lncrawl:
-    image: your-image-name
+    build: .
     container_name: lncrawl
     restart: always
     command: python -m lncrawl server
-    volumes:
-      - ./data:/data
     ports:
       - "8000:8000"
+    volumes:
+      - ./data:/data
