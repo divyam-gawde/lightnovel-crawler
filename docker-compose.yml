@@ -3,7 +3,7 @@ services:
     build: .
     container_name: lncrawl
     restart: always
-    command: python -m lncrawl server
+    command: server
     ports:
       - "8000:8000"
     volumes:
